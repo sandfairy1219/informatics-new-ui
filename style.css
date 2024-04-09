@@ -1,0 +1,37 @@
+#container{
+    border: 0.05cm solid black;
+    border-radius: 0.5cm;
+    padding: 0.5cm;
+    width: 20cm;
+}
+body{
+    margin: 0.5cm;
+}
+#content{
+    display: none;
+}
+#content2{
+    display: none;
+}
+#content3{
+    display: none;
+}
+
+#content4{
+    display: none;
+}
+#content5{
+    display: none;
+}
+#content6{
+    display: none;
+}
+#content7{
+    display: none;
+}
+#content8{
+    display: none;
+}
+.button{
+    border: 0.05cm solid;
+}
