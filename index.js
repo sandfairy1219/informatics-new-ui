@@ -10,3 +10,7 @@ function setInnerHTML3()  {
     const element = document.getElementById('container');
     element.innerHTML = "<div>#include <stdio.h> <br>main() <br>{<br>int c;  <br>float a;    <br>scanf(%d, &c);    <br>freopen(input.txt, r, stdin);   <br>scanf(%f, &a);    <br>printf(%lf\n, a*c*c); <br>}   <br></div>";
 }  
+const rawcode = document.querySelector('#rawcode')
+rawcode.addEventListener('click', function(){
+    location.href = 'https://github.com/sandfairy1219/informatics-new-ui'
+})
