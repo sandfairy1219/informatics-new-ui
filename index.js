@@ -73,3 +73,12 @@ const rawcode = document.querySelector('#rawcode')
 rawcode.addEventListener('click', function(){
     location.href = 'https://github.com/sandfairy1219/informatics-new-ui'
 })
+btn1.addEventListener('click',showdisplay())
+function showdisplay(){
+    if(container.style.display !== 'none') {
+        container.style.display = 'none'
+        btn.style.back
+      }
+      else {       
+      container.style.display = 'block'
+      }
