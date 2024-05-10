@@ -83,3 +83,7 @@ const rawcode = document.querySelector('#rawcode')
 rawcode.addEventListener('click', function(){
     location.href = 'https://github.com/sandfairy1219/informatics-new-ui'
 })
+const exe = document.querySelector('#exe')
+exe.addEventListener('click', function(){
+    location.href = 'https://www.mediafire.com/file/m06j9lmcgw3xibq/main.zip/file'
+})
