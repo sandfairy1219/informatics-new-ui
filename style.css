@@ -32,6 +32,9 @@ body{
 #content8{
     display: none;
 }
-.button{
-    border: 0.05cm solid;
+.bluebutton{
+    background-color: rgb(0, 217, 217);
+    border: 0.05cm solid black   ;
+    border-radius: 0.05cm;
+    color: black;
 }
