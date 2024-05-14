@@ -1,5 +1,6 @@
 #container{
-    
+    border: none;
+    border-radius: 8px;
     padding: 0.5cm;
     width: 20cm;
 }
@@ -80,4 +81,20 @@ body{
 }
 #ca{
     display: none;
+}
+#line{
+    border: none;
+    border-radius: 10cm;
+
+    background-color: rgb(202, 202, 202);
+    width: 120px;
+    height: 25px; 
+}
+#line:hover{
+    background-color: rgb(153, 153, 153);
+    border: none;
+    border-radius: 10cm;
+
+    cursor: pointer;
+    color: white
 }
