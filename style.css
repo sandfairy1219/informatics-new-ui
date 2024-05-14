@@ -7,34 +7,63 @@
 body{
     margin: 0.5cm;
 }
-#content{
-    display: none;
-}
-#content2{
-    display: none;
-}
-#content3{
-    display: none;
-}
-
-#content4{
-    display: none;
-}
-#content5{
-    display: none;
-}
-#content6{
-    display: none;
-}
-#content7{
-    display: none;
-}
-#content8{
-    display: none;
+.active{
+    border: none;
+    background-color: rgb(202, 202, 202);
 }
 .bluebutton{
     background-color: rgb(0, 217, 217);
-    border: 0.05cm solid black   ;
-    border-radius: 0.05cm;
+    border: none;
     color: black;
+}
+.active:hover{
+    background-color: rgb(153, 153, 153);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.bluebutton:hover{
+    background-color: rgba(0, 217, 217, 0.308);
+    border: none;
+    cursor: pointer;
+    color: blue;
+}
+#rawcode:hover{
+    background-color: rgb(153, 153, 153);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+#exe:hover{
+    background-color: rgb(153, 153, 153);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+#rawcode{
+    border: none;
+    background-color: rgb(202, 202, 202);
+    width: 120px;
+    height: 25px;    
+}
+#exe{
+    border: none;
+    background-color: rgb(202, 202, 202);
+    width: 140px;
+    height: 25px;  
+}
+#cat{
+    border: none;
+    background-color: rgb(202, 202, 202);
+    width: 120px;
+    height: 25px; 
+}
+#cat:hover{
+    background-color: rgb(153, 153, 153);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+#ca{
+    display: none;
 }
