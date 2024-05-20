@@ -278,6 +278,6 @@ line.addEventListener('click', function(){
     if(container.style.border !== 'none'){
         container.style.border =  'none';
     }else{
-        container.style.border = '5cm solid black';
+        container.style.border = '0.05cm solid black';
     }
 })
