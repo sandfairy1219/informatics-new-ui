@@ -325,4 +325,3 @@ line.addEventListener('click', function(){
     }else{
         container.style.border = '0.05cm solid black';
     }
-})
