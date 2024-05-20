@@ -274,7 +274,7 @@ cat.addEventListener('click',function(){
 })
 const line = document.querySelector('#line')
 let container = document.querySelector('#container')
-lc(){
+function lc(){
     if(container.style.border !== 'none'){
         container.style.border =  'none';
     }else{
