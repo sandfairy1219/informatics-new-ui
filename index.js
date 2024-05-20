@@ -5,6 +5,7 @@ const btn4 = document.querySelector('#btn4');
 const btn5 = document.querySelector('#btn5');
 const btn6 = document.querySelector('#btn6');
 const btn7 = document.querySelector('#btn7');
+const btn8 = document.querySelector('#btn8');
 let toggle = document.querySelector('#toggle');
 btn1.addEventListener('click', function(){
     const isActive = btn1.classList.contains('active');
