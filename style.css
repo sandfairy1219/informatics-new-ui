@@ -11,6 +11,7 @@ body{
     border: none;
     border-radius: 8px;
     background-color: rgb(202, 202, 202);
+    margin:0px;
 }
 .bluebutton{
     background-color: rgb(0, 217, 217);
