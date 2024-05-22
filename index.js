@@ -488,7 +488,7 @@ btn11.addEventListener('click', function(){
         btn10.classList.add('active');
         btn1.classList.add('active')
         const element = document.getElementById('container');
-        element.innerHTML = "미완성"
+        element.innerHTML = "#include <iostream><br> main()<br> {<br>   int a;                                 // p.154 1번<br>   int i;<br>   scanf(%d, &a);<br>   for (i = 1;i<=a;i++)<br>   {<br>      printf%d\n, i);<br>   }<br>   int a;                                 // p.154 2번<br>    int i;<br>    scanf(%d, &a);<br>    for (i = 1;i<=a;i++)<br>    {<br>        if(a%i == 0)<br>        printf(%d\n, i);<br>    }<br>    int a, i;                            //p.154 3번<br>    scanf(%d, &a);<br>   for (i = a;i>=1;i--)<br>   {<br>       if(a%i ==0)<br>      printf(%d\n, i);<br>  }<br> }"
     }
      else {
         btn11.classList.add('active'); // 자신만 active 클래스 추가하기
