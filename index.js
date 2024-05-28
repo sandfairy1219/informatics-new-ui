@@ -627,3 +627,22 @@ line.addEventListener('click', function(){
         container.style.border = '0.05cm solid black';
     }
 })
+const option = document.querySelector('#options')
+let text = document.querySelector('#optext')
+option.addEventListener('change', function(){
+    if(option.value =='1'){
+        text.innerHTML = ''
+    }
+    else if(option.value == '2'){
+        text.innerHTML = '<br><div>int - 정수</div> <br> <div>char - 문자</div> <br> <div>float, double -소수</div>'
+    }
+    else if(option.value == '3'){
+        text.innerHTML = '<br><div>for 반복분 - for(변수값설정;조건문;증감식)</div><br><div>while 반복문 = 변수값설정 while(조건문){증감식, 명령문}</div>'
+    }
+    else if(option.value == '4'){
+        text.innerHTML = '<br><div>if (조건문) {명령문}</div> <br><div>else if (조건문) {명령문} -if가 아닐때 실행 </div> <br><div>else {명령문} 아무것도 적용되지 않을때 실행</div>'
+    }
+    else if(option.value == '5'){
+        text.innerHTML = '<br><div>입력 - 변수선언 scanf("%d", &변수)</div> <br><div>출력 - 변수 선언 printf("%d", 변수) %d 뒤에 슬래시n 넣으면 문단 넘기기</div>'
+    }
+})
