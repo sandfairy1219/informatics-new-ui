@@ -99,3 +99,8 @@ body{
     cursor: pointer;
     color: white
 }
+#optext{
+    
+    border-radius: 0.1cm;
+    padding: 0.5cm;
+}

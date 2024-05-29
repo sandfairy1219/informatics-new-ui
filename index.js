@@ -621,10 +621,20 @@ cat.addEventListener('click',function(){
 const line = document.querySelector('#line')
 let container = document.querySelector('#container')
 line.addEventListener('click', function(){
-    if(container.style.border !== 'none'){
-        container.style.border =  'none';
-    }else{
+    
+    const isActive = line.classList.contains('active');
+    if(isActive)
+    {
+        line.classList.remove('active'); //자신만 active 클래스 지우기
+        line.classList.add('bluebutton'); //자신만 bluebutton 클래스 추가하기
+        text.style.border = '0.05cm solid black'
         container.style.border = '0.05cm solid black';
+    }
+    else{
+        line.classList.add('active'); //자신만 active 클래스 추가하기
+        line.classList.remove('bluebutton'); // 모두의 bluebutton 클래스 지우기
+        text.style.border = 'none'
+        container.style.border =  'none';
     }
 })
 const option = document.querySelector('#options')
@@ -634,15 +644,21 @@ option.addEventListener('change', function(){
         text.innerHTML = ''
     }
     else if(option.value == '2'){
-        text.innerHTML = '<br><div>int - 정수</div> <br> <div>char - 문자</div> <br> <div>float, double -소수</div>'
+        text.innerHTML = '<div>int - 정수</div> <br> <div>char - 문자</div> <br> <div>float, double -소수</div>'
     }
     else if(option.value == '3'){
-        text.innerHTML = '<br><div>for 반복분 - for(변수값설정;조건문;증감식)</div><br><div>while 반복문 = 변수값설정 while(조건문){증감식, 명령문}</div>'
+        text.innerHTML = '<div>for 반복분 - for(변수값설정;조건문;증감식)</div><br><div>while 반복문 = 변수값설정 while(조건문){증감식, 명령문}</div>'
     }
     else if(option.value == '4'){
-        text.innerHTML = '<br><div>if (조건문) {명령문}</div> <br><div>else if (조건문) {명령문} -if가 아닐때 실행 </div> <br><div>else {명령문} 아무것도 적용되지 않을때 실행</div>'
+        text.innerHTML = '<div>if (조건문) {명령문}</div> <br><div>else if (조건문) {명령문} -if가 아닐때 실행 </div> <br><div>else {명령문} 아무것도 적용되지 않을때 실행</div>'
     }
     else if(option.value == '5'){
-        text.innerHTML = '<br><div>입력 - 변수선언 scanf("%d", &변수)</div> <br><div>출력 - 변수 선언 printf("%d", 변수) %d 뒤에 슬래시n 넣으면 문단 넘기기</div>'
+        text.innerHTML = '<div>입력 - 변수선언 scanf("%d", &변수)</div> <br><div>출력 - 변수 선언 printf("%d", 변수) %d 뒤에 슬래시n 넣으면 문단 넘기기</div>'
+    }
+    else if(option.value =='6'){
+        text.innerHTML = '<div>#include 뒤에 쓰는 헤더파일 포함 명령문은 C일떄 stdio.h, C++일땐 iostream (둘 다 인풋 아웃풋 역할 갖고있음)</div><br><div>모든 명령문 뒤엔 ; 붙히기</div><br><div>조건문은 소괄호, 명령문은 대괄호 쓰기</div>'
+    }
+    else{
+        text.innerHTML = '잘못된 요청입니다.'
     }
 })
