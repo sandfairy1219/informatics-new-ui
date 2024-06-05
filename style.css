@@ -3,6 +3,7 @@
     border-radius: 8px;
     padding: 0.5cm;
     width: 20cm;
+    display: none;
 }
 body{
     margin: 0.5cm;
@@ -100,7 +101,7 @@ body{
     color: white
 }
 #optext{
-    
+    display: none;
     border-radius: 0.1cm;
     padding: 0.5cm;
 }
