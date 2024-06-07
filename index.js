@@ -9,3 +9,7 @@ option.addEventListener('change', function(){
         document.location.href = 'c.html'
     }
 })
+const rawcode = document.querySelector('#rawcode')
+rawcode.addEventListener('click', function(){
+    location.href = 'https://github.com/sandfairy1219/informatics-new-ui'
+})
