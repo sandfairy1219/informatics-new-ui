@@ -15,6 +15,7 @@ const btn10 = document.querySelector('#btn10');
 const btn11 = document.querySelector('#btn11');
 const btn12 = document.querySelector("#btn12");
 const btn13 = document.querySelector("#btn13");
+const init = document.querySelector('#init');
 let toggle = document.querySelector('#toggle');
 btn1.addEventListener('click', function(){ 
     const isActive = btn1.classList.contains('active');
@@ -701,5 +702,21 @@ btn13.addEventListener('click', function(){
         const element = document.getElementById('container');
         element.style.display = 'none'
         element.innerHTML = ""
+    }
+})
+init.addEventListener('click', function(){
+    const isActive = init.classList.contains('active');
+    if(isActive){
+        init.classList.remove('active');
+        init.classList.add('bluebutton');
+        const code = document.querySelector('#code');
+        code.style.display = 'block'
+        code.innerHTML = '#!/usr/bin/env pybricks-micropython<br>from pybricks.hubs import EV3Brick<br>from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,<br>                             InfraredSensor, UltrasonicSensor, GyroSensor)<br>from pybricks.parameters import Port, Stop, Direction, Button, Color<br>from pybricks.tools import wait, StopWatch, DataLog<br>from pybricks.robotics import DriveBase<br>from pybricks.media.ev3dev import SoundFile, ImageFile<br># This program requires LEGO EV3 MicroPython v2.0 or higher.<br># Click "Open user guide" on the EV3 extension tab for more information.<br># Create your objects here.<br>ev3 = EV3Brick()<br># Write your program here.<br>x = 72 # 전체 길이 144<br>y = 48 # 전체 길이 96<br>while True:<br>ev3.screen.draw_text(x, y, "JWH", Color.BLACK)<br> if ev3.buttons.pressed() == [Button.LEFT]:<br>   ev3.screen.clear()<br>    if x<=0:<br>       x = 0<br>  else:<br>       x = x-0.1<br> elif ev3.buttons.pressed() == [Button.RIGHT]:<br>   ev3.screen.clear()<br>   if x>=144:    <br>       x = 144<br>   else:<br>        x = x+0.1<br>  elif ev3.buttons.pressed() == [Button.UP]:<br>   ev3.screen.clear()<br>   if y<=0:<br>       y = 0<br>   else: <br>       y = y-0.1<br>  elif ev3.buttons.pressed () == [Button.DOWN]:<br>    ev3.screen.clear()<br>   if y>=96:<br>       y = 96<br>    else:<br>       y = y+0.1<br>  else:<br>   ev3.screen.draw_text(x, y, "JWH", Color.BLACK)'
+    }
+    else{
+        init.classList.add('active')
+        init.classList.remove('bluebutton')
+        const code = document.querySelector('#code');
+        code.style.display = 'none'
     }
 })
